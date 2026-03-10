@@ -1,20 +1,27 @@
 import { useNavigate } from "react-router-dom";
-import { FileText, MessageSquare, ArrowRight } from "lucide-react";
+import { FileText, MessageSquare, Images, ArrowRight } from "lucide-react";
 
 const sections = [
+  {
+    title: "Challenge Cards",
+    description: "Explore the 8 challenge cards for the immersion session. View high-quality images with fullscreen support.",
+    icon: Images,
+    path: "/challenge-cards",
+    gradient: "from-primary to-accent",
+  },
   {
     title: "Deep Research Reports",
     description: "View the NZ Sports AI consolidated research report in an interactive book format. Download or share with AI assistants.",
     icon: FileText,
     path: "/deep-research",
-    gradient: "from-primary to-accent",
+    gradient: "from-accent to-primary",
   },
   {
     title: "Prompts",
     description: "Double Diamond framework prompts for AI-powered coaching. Copy and use with your favourite AI tool.",
     icon: MessageSquare,
     path: "/prompts",
-    gradient: "from-accent to-primary",
+    gradient: "from-primary to-accent",
   },
 ];
 
@@ -26,7 +33,7 @@ const Index = () => {
       <div className="max-w-4xl w-full animate-fade-in">
         <div className="text-center mb-12">
           <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-3">
-            NZ Sport Leaders Delegation • India 2026
+            NZ Sport Leaders Delegation &bull; India 2026
           </p>
           <h1 className="text-4xl md:text-5xl font-bold font-display text-foreground mb-4">
             AI Coaching Toolkit
@@ -36,7 +43,7 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {sections.map((section) => (
             <button
               key={section.path}
