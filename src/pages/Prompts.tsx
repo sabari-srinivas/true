@@ -88,7 +88,7 @@ const Prompts = () => {
       <div className="border-b border-border bg-card">
         <div className="max-w-7xl mx-auto p-4">
           <div className="grid md:grid-cols-2 gap-4">
-            <div ref={img1Ref} className="rounded-lg border border-border overflow-hidden bg-background relative">
+            <div ref={img1Ref} className="rounded-lg border border-border overflow-hidden bg-background relative group">
               <div className="px-3 py-2 bg-muted border-b border-border flex items-center justify-between">
                 <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
                   Revamped Double Diamond — General Framework
@@ -97,13 +97,15 @@ const Prompts = () => {
                   {fs1 ? <Minimize className="h-4 w-4" /> : <Maximize className="h-4 w-4" />}
                 </Button>
               </div>
-              <img
-                src={doubleDiamondGeneral}
-                alt="Revamped Double Diamond general framework"
-                className="w-full h-auto object-contain"
-              />
+              <div className="flex items-center justify-center bg-background p-2">
+                <img
+                  src={doubleDiamondGeneral}
+                  alt="Revamped Double Diamond general framework"
+                  className="w-full h-auto object-contain max-h-[80vh]"
+                />
+              </div>
             </div>
-            <div ref={img2Ref} className="rounded-lg border border-border overflow-hidden bg-background relative">
+            <div ref={img2Ref} className="rounded-lg border border-border overflow-hidden bg-background relative group">
               <div className="px-3 py-2 bg-muted border-b border-border flex items-center justify-between">
                 <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
                   AI Tools + Rapid Builders — From Abstract Ideas to Working Demos in Days
@@ -112,7 +114,9 @@ const Prompts = () => {
                   {fs2 ? <Minimize className="h-4 w-4" /> : <Maximize className="h-4 w-4" />}
                 </Button>
               </div>
-              <DoubleDiamondAI />
+              <div className="flex items-center justify-center bg-background p-2">
+                <DoubleDiamondAI />
+              </div>
             </div>
           </div>
         </div>

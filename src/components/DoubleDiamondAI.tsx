@@ -33,7 +33,7 @@ const DoubleDiamondAI = () => {
           Don't know<br/>Could be
         </div>
 
-        <svg viewBox="0 0 800 260" className="w-full max-w-2xl" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 820 290" className="w-full max-w-2xl" xmlns="http://www.w3.org/2000/svg">
           {/* Diamond 1 - LEARN/WIDEN + DIAGNOSE */}
           <g>
             {/* Top-left triangle (LEARN) */}
@@ -45,9 +45,11 @@ const DoubleDiamondAI = () => {
             {/* Bottom-right triangle (DIAGNOSE bottom) */}
             <polygon points="200,240 340,130 200,130" fill="hsl(200, 80%, 30%)" opacity="0.9"/>
 
-            {/* Diagonal labels */}
-            <text x="130" y="70" fill="white" fontSize="9" fontStyle="italic" transform="rotate(-30, 130, 70)" opacity="0.8">Diverging</text>
-            <text x="270" y="70" fill="white" fontSize="9" fontStyle="italic" transform="rotate(30, 270, 70)" opacity="0.8">Converging</text>
+            {/* Diverging / Converging labels */}
+            <text x="115" y="60" fill="white" fontSize="10" fontStyle="italic" fontWeight="600" transform="rotate(-38, 115, 60)" opacity="0.9">Diverging</text>
+            <text x="115" y="210" fill="white" fontSize="10" fontStyle="italic" fontWeight="600" transform="rotate(38, 115, 210)" opacity="0.9">Diverging</text>
+            <text x="280" y="60" fill="white" fontSize="10" fontStyle="italic" fontWeight="600" transform="rotate(38, 280, 60)" opacity="0.9">Converging</text>
+            <text x="280" y="210" fill="white" fontSize="10" fontStyle="italic" fontWeight="600" transform="rotate(-38, 280, 210)" opacity="0.9">Converging</text>
 
             {/* Center labels */}
             <text x="145" y="135" fill="white" fontSize="16" fontWeight="bold" textAnchor="middle">LEARN</text>
@@ -66,9 +68,11 @@ const DoubleDiamondAI = () => {
             {/* Bottom-right triangle */}
             <polygon points="540,240 680,130 540,130" fill="hsl(200, 80%, 30%)" opacity="0.9"/>
 
-            {/* Diagonal labels */}
-            <text x="470" y="70" fill="white" fontSize="9" fontStyle="italic" transform="rotate(-30, 470, 70)" opacity="0.8">Diverging</text>
-            <text x="610" y="70" fill="white" fontSize="9" fontStyle="italic" transform="rotate(30, 610, 70)" opacity="0.8">Converging</text>
+            {/* Diverging / Converging labels */}
+            <text x="455" y="60" fill="white" fontSize="10" fontStyle="italic" fontWeight="600" transform="rotate(-38, 455, 60)" opacity="0.9">Diverging</text>
+            <text x="455" y="210" fill="white" fontSize="10" fontStyle="italic" fontWeight="600" transform="rotate(38, 455, 210)" opacity="0.9">Diverging</text>
+            <text x="620" y="60" fill="white" fontSize="10" fontStyle="italic" fontWeight="600" transform="rotate(38, 620, 60)" opacity="0.9">Converging</text>
+            <text x="620" y="210" fill="white" fontSize="10" fontStyle="italic" fontWeight="600" transform="rotate(-38, 620, 210)" opacity="0.9">Converging</text>
 
             {/* Center labels */}
             <text x="490" y="128" fill="white" fontSize="12" fontWeight="bold" textAnchor="middle">IDEATE</text>
@@ -91,26 +95,26 @@ const DoubleDiamondAI = () => {
           <text x="770" y="125" fill="hsl(200, 70%, 30%)" fontSize="11" fontWeight="bold">Show</text>
           <text x="770" y="140" fill="hsl(200, 70%, 30%)" fontSize="11" fontWeight="bold">& Scale</text>
 
-          {/* Bottom annotations */}
-          <text x="60" y="255" fill="hsl(200, 30%, 50%)" fontSize="8">Question,</text>
-          <text x="60" y="263" fill="hsl(200, 30%, 50%)" fontSize="8">Challenge,</text>
-          <text x="60" y="271" fill="hsl(200, 30%, 50%)" fontSize="8">Client Brief</text>
+          {/* Bottom annotations - fully visible */}
+          <text x="60" y="260" fill="hsl(200, 30%, 50%)" fontSize="9" fontWeight="600">Question,</text>
+          <text x="60" y="271" fill="hsl(200, 30%, 50%)" fontSize="9">Challenge,</text>
+          <text x="60" y="282" fill="hsl(200, 30%, 50%)" fontSize="9">Client Brief</text>
 
-          <text x="300" y="255" fill="hsl(200, 30%, 50%)" fontSize="8">Unstructured</text>
-          <text x="300" y="263" fill="hsl(200, 30%, 50%)" fontSize="8">Research</text>
-          <text x="300" y="271" fill="hsl(200, 30%, 50%)" fontSize="8">Findings</text>
+          <text x="290" y="260" fill="hsl(200, 30%, 50%)" fontSize="9" fontWeight="600">Unstructured</text>
+          <text x="290" y="271" fill="hsl(200, 30%, 50%)" fontSize="9">Research</text>
+          <text x="290" y="282" fill="hsl(200, 30%, 50%)" fontSize="9">Findings</text>
 
-          <text x="400" y="255" fill="hsl(200, 30%, 50%)" fontSize="8">Final Brief,</text>
-          <text x="400" y="263" fill="hsl(200, 30%, 50%)" fontSize="8">HMW Question,</text>
-          <text x="400" y="271" fill="hsl(200, 30%, 50%)" fontSize="8">Strategy</text>
+          <text x="400" y="260" fill="hsl(200, 30%, 50%)" fontSize="9" fontWeight="600">Final Brief,</text>
+          <text x="400" y="271" fill="hsl(200, 30%, 50%)" fontSize="9">HMW Question,</text>
+          <text x="400" y="282" fill="hsl(200, 30%, 50%)" fontSize="9">Strategy</text>
 
-          <text x="540" y="255" fill="hsl(200, 30%, 50%)" fontSize="8">First ideas and visions,</text>
-          <text x="540" y="263" fill="hsl(200, 30%, 50%)" fontSize="8">Potential solutions,</text>
-          <text x="540" y="271" fill="hsl(200, 30%, 50%)" fontSize="8">Hypothetical answers</text>
+          <text x="530" y="260" fill="hsl(200, 30%, 50%)" fontSize="9" fontWeight="600">First Ideas and Visions,</text>
+          <text x="530" y="271" fill="hsl(200, 30%, 50%)" fontSize="9">Potential Solutions,</text>
+          <text x="530" y="282" fill="hsl(200, 30%, 50%)" fontSize="9">Hypothetical Answers</text>
 
-          <text x="690" y="255" fill="hsl(200, 30%, 50%)" fontSize="8">Answers,</text>
-          <text x="690" y="263" fill="hsl(200, 30%, 50%)" fontSize="8">Product,</text>
-          <text x="690" y="271" fill="hsl(200, 30%, 50%)" fontSize="8">Solution</text>
+          <text x="700" y="260" fill="hsl(200, 30%, 50%)" fontSize="9" fontWeight="600">Answers,</text>
+          <text x="700" y="271" fill="hsl(200, 30%, 50%)" fontSize="9">Products,</text>
+          <text x="700" y="282" fill="hsl(200, 30%, 50%)" fontSize="9">Solutions</text>
 
           {/* Point B */}
           <text x="688" y="125" fill="hsl(200, 30%, 40%)" fontSize="10" fontWeight="bold">B</text>
