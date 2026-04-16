@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft, Copy, Check, Maximize, X } from "lucide-react";
+import { ArrowLeft, Copy, Check, Maximize, X, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const prompts = [
@@ -110,9 +110,28 @@ const Prompts = () => {
 
           {/* Right: All prompts visible, scrollable */}
           <div className="flex-1 min-w-0 overflow-y-auto pr-1 space-y-3">
-            <h2 className="text-base font-bold font-display text-foreground mb-3">
-              Follow the {prompts.length}-Step Framework
-            </h2>
+            <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
+              <h2 className="text-base font-bold font-display text-foreground">
+                Follow the {prompts.length}-Step Framework
+              </h2>
+              <div className="flex items-center gap-2">
+                <a href="https://chat.openai.com" target="_blank" rel="noopener noreferrer">
+                  <Button size="sm" className="bg-chatgpt hover:bg-chatgpt/90 text-primary-foreground">
+                    <ExternalLink className="h-3.5 w-3.5 mr-1" /> Open ChatGPT
+                  </Button>
+                </a>
+                <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">
+                  <Button size="sm" className="bg-gemini hover:bg-gemini/90 text-primary-foreground">
+                    <ExternalLink className="h-3.5 w-3.5 mr-1" /> Open Gemini
+                  </Button>
+                </a>
+                <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">
+                  <Button size="sm" className="bg-claude hover:bg-claude/90 text-primary-foreground">
+                    <ExternalLink className="h-3.5 w-3.5 mr-1" /> Open Claude
+                  </Button>
+                </a>
+              </div>
+            </div>
 
             {prompts.map((prompt, index) => (
               <div
