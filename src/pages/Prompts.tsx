@@ -7,39 +7,36 @@ const prompts = [
   {
     step: 0,
     label: "Learn",
-    text: `Here is a deep research report for the topic we are going to discuss today. No action required. Use this report as additional context for your responses apart from web search and other resources.`,
+    text: `Here is a Challenge card for the topic we are going to discuss today. No action required. Use this report as additional context for your responses apart from web search and other resources.`,
   },
   {
     step: 1,
     label: "Widen",
-    text: `Act as a research aide for the [selected challenge].  List key personas, top pains, current workarounds, and success metrics.
-Return 5 insights & 3 risks tailored to this challenge context.`,
+    text: `Act as a research aide for [selected challenge] for [business unit]. List key personas, top pains, current workarounds, and success metrics. Return 5 insights & 3 risks tailored to this challenge context.`,
   },
   {
     step: 2,
     label: "Diagnose",
-    text: `Let's pick the [top pain-point] for this challenge.  For this pain, run a Five Whys.
-Propose 3 root-cause hypotheses and the disproof evidence for each. Specify the minimum data cut & owners to pull.
-Output a root-cause map, test plan, and privacy constraints.`,
+    text: `Let's pick the top [#] pains for this challenge. For these listed top pains, run a Five Whys. Propose 3 root-cause hypotheses and the disproof evidence for each. Specify the minimum data cut & owners to pull. Output a root-cause map, test plan, and privacy constraints.`,
   },
   {
     step: 3,
     label: "Ideate",
     text: `Generate and Cluster possible AI driven ideas into 3 Options:
-1.Process (policy, ways of working),
-2.Analytics/ML (forecast, optimise, recommend),
-3.AI & Automation (Computer Vision, Retrieval Augmented Generation, Agentic AI, etc.).
-Score each on Impact × Feasibility × Confidence × Time-to-Value. Recommend one pilot with the smallest integration surface and clearest value proof.`,
+1. Process (policy, ways of working),
+2. Analytics/ML (forecast, optimise, recommend),
+3. Automation (CV, Retrieval-Augmented Generation/Co-Pilot, tasking).
+Score each on Impact × Feasibility × Confidence × Time-to-Value. Recommend one pilot with the smallest integration surface and clearest value proof to [business unit].`,
   },
   {
     step: 4,
     label: "Brief",
-    text: `For the recommended pilot, create a one-page pilot brief including:  Target user(s), problem statement, success metrics & baselines, target uplift, key flow (5–7 steps), screens/components, sample UI copy, representative sample data, integration points, and relevant guardrails ((domain specific regulation boundaries, bias tests, fallback behaviour, etc.).`,
+    text: `For option [#], create a one-page pilot brief including: Target user(s), problem statement, success metrics & baselines, target uplift, key flow (5–7 steps), screens/components, sample UI copy, representative sample data, integration points, and relevant guardrails (GDPR/PCI, domain specific regulation boundaries, bias tests, fallback behaviour).`,
   },
   {
     step: 5,
     label: "Build",
-    text: `You are a product design expert. Using only the brief above, write a single [platform] product requirements prompt that includes Product name + one liner description (actions, process, capabilities), who it's for, screens + key components, brand colors, main user flow, sample data, concise headlines/CTAs, UI instructions, success metric card, constraints (no PII). Return the [platform] prompt only`,
+    text: `You are a product design expert. Using only the brief above, write a single [platform] product requirements prompt that includes: Product name + one liner description (actions, process, capabilities), who it's for, screens + key components, brand colors, main user flow, sample data, concise headlines/CTAs, UI instructions, success metric card, constraints (no PII). Return the [platform] prompt only.`,
   },
 ];
 

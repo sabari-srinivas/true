@@ -1,20 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import { FileText, MessageSquare, Images, ArrowRight } from "lucide-react";
+import { MessageSquare, Images, ArrowRight } from "lucide-react";
 
 const sections = [
   {
     title: "Challenge Cards",
-    description: "Explore the 13 challenge cards for the immersion session. View high-quality images with fullscreen support.",
+    description: "Explore 14 challenge cards across industries — from banking and pharma to telecom and manufacturing. Each card frames a real-world problem with why it's hard, why GenAI, and success criteria.",
     icon: Images,
     path: "/challenge-cards",
     gradient: "from-primary to-accent",
-  },
-  {
-    title: "Deep Research Reports",
-    description: "View the CBIC / NCTC Stakeholder Visit Research Brief in an interactive book format. Download or share with AI assistants.",
-    icon: FileText,
-    path: "/deep-research",
-    gradient: "from-accent to-primary",
   },
   {
     title: "Prompts",
@@ -33,17 +26,17 @@ const Index = () => {
       <div className="max-w-6xl w-full animate-fade-in">
         <div className="text-center mb-12">
           <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-3">
-            CBIC / NCTC Stakeholder Visit &bull; Rapid Build Immersion
+            iExcel Program &bull; Rapid Build Immersion
           </p>
           <h1 className="text-4xl md:text-5xl font-bold font-display text-foreground mb-4">
-            AI Coaching Toolkit
+            iExcel AI Coaching Toolkit
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Resources for the rapid build immersion session — research, challenge cards, and prompts for integrated customs risk intelligence and AI.
+            Resources for the iExcel rapid build immersion — challenge cards, research, and prompts to accelerate GenAI adoption across industries.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {sections.map((section) => (
             <button
               key={section.path}
