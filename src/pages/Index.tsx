@@ -32,7 +32,7 @@ const Index = () => {
             iExcel AI Coaching Toolkit
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Resources for the iExcel rapid build immersion — challenge cards and prompts to accelerate GenAI adoption across industries.
+            Resources for the iExcel rapid build immersion — challenge cards and prompts to accelerate GenAI adoption across business groups.
           </p>
         </div>
 
