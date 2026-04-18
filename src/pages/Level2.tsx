@@ -3,7 +3,7 @@ import LevelDetail from "./LevelDetail";
 const groups = [
   {
     id: "group-01",
-    label: "Group 1 — Suresh",
+    label: "Group 1 — Cloud",
     cards: [
     {
       id: "card01",
@@ -35,7 +35,7 @@ const groups = [
     ],
   },  {
     id: "group-02",
-    label: "Group 2 — Sheik",
+    label: "Group 2 — Financial Institution",
     cards: [
     {
       id: "card01",
@@ -67,7 +67,7 @@ const groups = [
     ],
   },  {
     id: "group-03",
-    label: "Group 3 — Amani",
+    label: "Group 3 — Financial Institution",
     cards: [
     {
       id: "card01",
@@ -99,7 +99,7 @@ const groups = [
     ],
   },  {
     id: "group-04",
-    label: "Group 4 — Sudhanshu",
+    label: "Group 4 — Financial Institution UK",
     cards: [
     {
       id: "card01",
@@ -131,7 +131,7 @@ const groups = [
     ],
   },  {
     id: "group-05",
-    label: "Group 5 — Eswar",
+    label: "Group 5 — CBG",
     cards: [
     {
       id: "card01",
@@ -163,7 +163,7 @@ const groups = [
     ],
   },  {
     id: "group-06",
-    label: "Group 6 — Jayanthi",
+    label: "Group 6 — Corporate Functions",
     cards: [
     {
       id: "card01",
@@ -195,7 +195,7 @@ const groups = [
     ],
   },  {
     id: "group-07",
-    label: "Group 7 — Hari",
+    label: "Group 7 — Telecom",
     cards: [
     {
       id: "card01",
@@ -227,7 +227,7 @@ const groups = [
     ],
   },  {
     id: "group-08",
-    label: "Group 8 — Sandhya",
+    label: "Group 8 — Business Process Operations",
     cards: [
     {
       id: "card01",
@@ -259,7 +259,7 @@ const groups = [
     ],
   },  {
     id: "group-09",
-    label: "Group 9 — Sharon",
+    label: "Group 9 — Enterprise Solutions",
     cards: [
     {
       id: "card01",
@@ -291,7 +291,7 @@ const groups = [
     ],
   },  {
     id: "group-10",
-    label: "Group 10 — Arun",
+    label: "Group 10 — New Growth Markets",
     cards: [
     {
       id: "card01",
@@ -323,7 +323,7 @@ const groups = [
     ],
   },  {
     id: "group-11",
-    label: "Group 11 — Felina",
+    label: "Group 11 — Human Resources",
     cards: [
     {
       id: "card01",
@@ -355,7 +355,7 @@ const groups = [
     ],
   },  {
     id: "group-12",
-    label: "Group 12 — Harivarshini",
+    label: "Group 12 — Healthcare",
     cards: [
     {
       id: "card01",
@@ -387,7 +387,7 @@ const groups = [
     ],
   },  {
     id: "group-13",
-    label: "Group 13 — Stains",
+    label: "Group 13 — Manufacturing",
     cards: [
     {
       id: "card01",
@@ -419,7 +419,7 @@ const groups = [
     ],
   },  {
     id: "group-14",
-    label: "Group 14 — Sourav",
+    label: "Group 14 — Tech Solutions",
     cards: [
     {
       id: "card01",
