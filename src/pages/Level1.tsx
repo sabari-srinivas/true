@@ -4,6 +4,7 @@ const cards = [
     {
       id: "card01",
       name: "Company Profiler Deepresearch",
+      tool: "Gemini Enterprise Deep Research Agent",
       pdf: "/levels/level-1/card01/Card_DeepResearchCompanyProfiler.pdf",
       testData: [
 
@@ -12,6 +13,7 @@ const cards = [
     {
       id: "card02",
       name: "Document to Infographic",
+      tool: "Microsoft Copilot",
       pdf: "/levels/level-1/card02/Card_RawDataInfographic.pdf",
       testData: [
 
@@ -20,6 +22,7 @@ const cards = [
     {
       id: "card03",
       name: "Project Intelligence Mindmap",
+      tool: "Gemini Enterprise NotebookLM",
       pdf: "/levels/level-1/card03/Card_NotebookLMMindMap.pdf",
       testData: [
           { name: "Risk_Issue_Log (1).xlsx", path: "/levels/level-1/card03/test-data/Risk_Issue_Log (1).xlsx" },
@@ -32,6 +35,7 @@ const cards = [
     {
       id: "card04",
       name: "Project Pulse Architect",
+      tool: "Gemini Enterprise Agent Builder",
       pdf: "/levels/level-1/card04/Card_ProjectPulseArchitect.pdf",
       testData: [
           { name: "Transcript_Architecture_Review_APIGateway (1).txt", path: "/levels/level-1/card04/test-data/Transcript_Architecture_Review_APIGateway (1).txt" },
@@ -42,6 +46,7 @@ const cards = [
     {
       id: "card05",
       name: "RFP Bid Blueprint Accelerator",
+      tool: "Gemini Enterprise Agent Builder",
       pdf: "/levels/level-1/card05/Card_BidBlueprintAccelerator.pdf",
       testData: [
           { name: "Doc2_Methodology_Tooling_v2.docx", path: "/levels/level-1/card05/test-data/Doc2_Methodology_Tooling_v2.docx" },

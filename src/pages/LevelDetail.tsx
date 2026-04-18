@@ -11,6 +11,7 @@ interface TestFile {
 interface Card {
   id: string;
   name: string;
+  tool?: string;
   pdf: string | null;
   testData: TestFile[];
 }
@@ -124,8 +125,38 @@ const LevelDetail = ({ level, groups, defaultExpanded }: LevelDetailProps) => {
             </div>
           )}
 
-          {/* Right panel: Prompts + Test Data */}
+          {/* Right panel: Test Data + Prompts */}
           <div className="lg:w-96 shrink-0 overflow-y-auto space-y-4">
+            {/* Test Data Files */}
+            {card.testData.length > 0 && (
+              <div className="rounded-xl border border-border bg-card p-4">
+                <h3 className="text-sm font-bold text-foreground mb-3 uppercase tracking-wide">
+                  Test Data Files
+                </h3>
+                <div className="space-y-2">
+                  {card.testData.map((file) => (
+                    <div
+                      key={file.name}
+                      className="flex items-center justify-between gap-2 rounded-lg border border-border p-3 bg-muted/30"
+                    >
+                      <div className="flex items-center gap-2 min-w-0">
+                        <FileSpreadsheet className="h-4 w-4 text-green-600 shrink-0" />
+                        <span className="text-sm text-foreground truncate">{file.name}</span>
+                      </div>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="h-7 w-7 p-0 shrink-0"
+                        onClick={() => handleDownload(file.path, file.name)}
+                      >
+                        <Download className="h-3.5 w-3.5" />
+                      </Button>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Prompts */}
             {cardPrompts.length > 0 && (
               <div className="rounded-xl border border-border bg-card p-4">
@@ -163,36 +194,6 @@ const LevelDetail = ({ level, groups, defaultExpanded }: LevelDetailProps) => {
                     </div>
                     );
                   })}
-                </div>
-              </div>
-            )}
-
-            {/* Test Data Files */}
-            {card.testData.length > 0 && (
-              <div className="rounded-xl border border-border bg-card p-4">
-                <h3 className="text-sm font-bold text-foreground mb-3 uppercase tracking-wide">
-                  Test Data Files
-                </h3>
-                <div className="space-y-2">
-                  {card.testData.map((file) => (
-                    <div
-                      key={file.name}
-                      className="flex items-center justify-between gap-2 rounded-lg border border-border p-3 bg-muted/30"
-                    >
-                      <div className="flex items-center gap-2 min-w-0">
-                        <FileSpreadsheet className="h-4 w-4 text-green-600 shrink-0" />
-                        <span className="text-sm text-foreground truncate">{file.name}</span>
-                      </div>
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className="h-7 w-7 p-0 shrink-0"
-                        onClick={() => handleDownload(file.path, file.name)}
-                      >
-                        <Download className="h-3.5 w-3.5" />
-                      </Button>
-                    </div>
-                  ))}
                 </div>
               </div>
             )}
@@ -254,7 +255,7 @@ const LevelDetail = ({ level, groups, defaultExpanded }: LevelDetailProps) => {
                       >
                         <div className="flex-1 min-w-0">
                           <p className="text-sm font-semibold text-primary font-display">
-                            {formatName(card.name)}
+                            {formatName(card.name)}{card.tool && <span> — {card.tool}</span>}
                           </p>
                           <p className="text-xs text-muted-foreground mt-1">
                             {card.testData.length} test data file{card.testData.length !== 1 ? "s" : ""}
