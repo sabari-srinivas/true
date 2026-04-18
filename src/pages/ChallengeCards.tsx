@@ -131,10 +131,10 @@ const ChallengeCards = () => {
             className="max-w-[90vw] max-h-[90vh] object-contain"
             onClick={(e) => e.stopPropagation()}
           />
-          <div className="absolute top-4 right-4 flex items-center gap-2">
+          <div className="absolute top-4 right-4 z-[60] flex items-center gap-2">
             <button
               onClick={(e) => handleCopyImage(e, selectedImg)}
-              className="h-10 w-10 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition-colors"
+              className="h-10 w-10 rounded-full bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-colors shadow-lg"
               title="Copy image"
             >
               {imgCopied ? <Check className="h-5 w-5" /> : <Copy className="h-5 w-5" />}
@@ -144,14 +144,14 @@ const ChallengeCards = () => {
                 const card = challengeCards.find((c) => c.src === selectedImg);
                 handleDownload(e, selectedImg, card?.name || "challenge-card");
               }}
-              className="h-10 w-10 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition-colors"
+              className="h-10 w-10 rounded-full bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-colors shadow-lg"
               title="Download image"
             >
               <Download className="h-5 w-5" />
             </button>
             <button
               onClick={() => setSelectedImg(null)}
-              className="h-10 w-10 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition-colors"
+              className="h-10 w-10 rounded-full bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-colors shadow-lg"
               title="Close"
             >
               <X className="h-5 w-5" />
