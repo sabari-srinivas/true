@@ -1,42 +1,42 @@
 import { useNavigate } from "react-router-dom";
-import { Layers, Rocket, ArrowRight } from "lucide-react";
+import { ArrowLeft, Images, MessageSquare, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const sections = [
   {
-    title: "Level 1, Level 2, Level 3",
-    description: "Structured learning levels to progressively build GenAI capabilities across business groups.",
-    icon: Layers,
-    path: "/levels",
+    title: "Challenge Cards",
+    description: "Explore 14 challenge cards across business groups. Each card frames a real-world problem with why it's hard, why GenAI, and success criteria.",
+    icon: Images,
+    path: "/challenge-cards",
     gradient: "from-primary to-accent",
   },
   {
-    title: "Immersion Program",
-    description: "Rapid build immersion — challenge cards and prompts to accelerate GenAI adoption across business groups.",
-    icon: Rocket,
-    path: "/immersion",
+    title: "Prompts",
+    description: "Double Diamond framework prompts for the AI immersion session. Copy and use with your favourite AI tool.",
+    icon: MessageSquare,
+    path: "/prompts",
     gradient: "from-accent to-primary",
   },
 ];
 
-const Index = () => {
+const Immersion = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-center px-6 py-12">
-      <div className="max-w-6xl w-full animate-fade-in">
-        <div className="text-center mb-12">
-          <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-3">
-            iExcel Program &bull; Rapid Build Immersion
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold font-display text-foreground mb-4">
-            iExcel AI Coaching Toolkit
+    <div className="min-h-screen bg-background flex flex-col">
+      <header className="border-b border-border bg-card px-4 py-2 shrink-0">
+        <div className="flex items-center gap-3">
+          <Button variant="ghost" size="sm" onClick={() => navigate("/")}>
+            <ArrowLeft className="h-4 w-4 mr-1" /> Back
+          </Button>
+          <h1 className="text-lg font-semibold font-display text-card-foreground">
+            Immersion Program
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Resources for the iExcel rapid build immersion — challenge cards and prompts to accelerate GenAI adoption across business groups.
-          </p>
         </div>
+      </header>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div className="flex-1 flex items-center justify-center px-6 py-12">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl w-full">
           {sections.map((section) => (
             <button
               key={section.path}
@@ -68,4 +68,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Immersion;

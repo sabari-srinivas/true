@@ -1,0 +1,457 @@
+import LevelDetail from "./LevelDetail";
+
+const groups = [
+  {
+    id: "group-01",
+    label: "Group 1 — Suresh",
+    cards: [
+    {
+      id: "card01",
+      name: "Resource Billing reconciler",
+      pdf: "/levels/group-01/level-2/card01/CL_Card01_ResourceBillingReconciler.pdf",
+      testData: [
+          { name: "CL_FTEUtilisation.xlsx", path: "/levels/group-01/level-2/card01/test-data/CL_FTEUtilisation.xlsx" },
+          { name: "CL_RateCard.xlsx", path: "/levels/group-01/level-2/card01/test-data/CL_RateCard.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "SLA Breach Cost Classifier",
+      pdf: "/levels/group-01/level-2/card02/CL_Card02_SLABreachCostClassifier.pdf",
+      testData: [
+          { name: "CL_TicketLog.xlsx", path: "/levels/group-01/level-2/card02/test-data/CL_TicketLog.xlsx" },
+          { name: "CL_SLAReference.xlsx", path: "/levels/group-01/level-2/card02/test-data/CL_SLAReference.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "Case SLA Breach Cost Classifier",
+      pdf: "/levels/group-01/level-2/card03/CL_Card03_ProjectResourcingGapFinder.pdf",
+      testData: [
+          { name: "CL_ProcessRequirements.xlsx", path: "/levels/group-01/level-2/card03/test-data/CL_ProcessRequirements.xlsx" },
+          { name: "CL_StaffAllocation.xlsx", path: "/levels/group-01/level-2/card03/test-data/CL_StaffAllocation.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-02",
+    label: "Group 2 — Sheik",
+    cards: [
+    {
+      id: "card01",
+      name: "Case SLA Breach Cost Classifier",
+      pdf: "/levels/group-02/level-2/card01/DM_Card02_CaseSLABreachCostClassifier.pdf",
+      testData: [
+          { name: "DM_TicketLog.xlsx", path: "/levels/group-02/level-2/card01/test-data/DM_TicketLog.xlsx" },
+          { name: "DM_SLAReference.xlsx", path: "/levels/group-02/level-2/card01/test-data/DM_SLAReference.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "Delivery Capacity Gap Finder",
+      pdf: "/levels/group-02/level-2/card02/DM_Card03_DeliveryCapacityGapFinder.pdf",
+      testData: [
+          { name: "DM_ProcessRequirements.xlsx", path: "/levels/group-02/level-2/card02/test-data/DM_ProcessRequirements.xlsx" },
+          { name: "DM_StaffAllocation.xlsx", path: "/levels/group-02/level-2/card02/test-data/DM_StaffAllocation.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "FTE Billing Reconciler",
+      pdf: "/levels/group-02/level-2/card03/DM_Card01_FTEBillingReconciler.pdf",
+      testData: [
+          { name: "DM_FTEUtilisation.xlsx", path: "/levels/group-02/level-2/card03/test-data/DM_FTEUtilisation.xlsx" },
+          { name: "DM_RateCard.xlsx", path: "/levels/group-02/level-2/card03/test-data/DM_RateCard.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-03",
+    label: "Group 3 — Amani",
+    cards: [
+    {
+      id: "card01",
+      name: "Case SLA breach cost Classifier",
+      pdf: "/levels/group-03/level-2/card01/PM_Card02_CaseSLABreachCostClassifier.pdf",
+      testData: [
+          { name: "PM_SLAReference.xlsx", path: "/levels/group-03/level-2/card01/test-data/PM_SLAReference.xlsx" },
+          { name: "PM_TicketLog.xlsx", path: "/levels/group-03/level-2/card01/test-data/PM_TicketLog.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "Employee Billing Reconciler",
+      pdf: "/levels/group-03/level-2/card02/PM_Card01_EmployeeBillingReconciler.pdf",
+      testData: [
+          { name: "PM_FTEUtilisation.xlsx", path: "/levels/group-03/level-2/card02/test-data/PM_FTEUtilisation.xlsx" },
+          { name: "PM_RateCard.xlsx", path: "/levels/group-03/level-2/card02/test-data/PM_RateCard.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "Project resource gap finder",
+      pdf: "/levels/group-03/level-2/card03/PM_Card03_ProjectResourcingGapFinder.pdf",
+      testData: [
+          { name: "PM_ProcessRequirements.xlsx", path: "/levels/group-03/level-2/card03/test-data/PM_ProcessRequirements.xlsx" },
+          { name: "PM_StaffAllocation.xlsx", path: "/levels/group-03/level-2/card03/test-data/PM_StaffAllocation.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-04",
+    label: "Group 4 — Sudhanshu",
+    cards: [
+    {
+      id: "card01",
+      name: "Case SLA Breach Cost Classifier",
+      pdf: "/levels/group-04/level-2/card01/FI_Card02_CaseSLABreachCostClassifier.pdf",
+      testData: [
+          { name: "FI_TicketLog.xlsx", path: "/levels/group-04/level-2/card01/test-data/FI_TicketLog.xlsx" },
+          { name: "FI_SLAReference.xlsx", path: "/levels/group-04/level-2/card01/test-data/FI_SLAReference.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "Employee Billing Reconciler",
+      pdf: "/levels/group-04/level-2/card02/FI_Card01_EmployeeBillingReconciler.pdf",
+      testData: [
+          { name: "FI_RateCard.xlsx", path: "/levels/group-04/level-2/card02/test-data/FI_RateCard.xlsx" },
+          { name: "FI_FTEUtilisation.xlsx", path: "/levels/group-04/level-2/card02/test-data/FI_FTEUtilisation.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "Regulatory Staffing Gap Finder",
+      pdf: "/levels/group-04/level-2/card03/FI_Card03_RegulatoryStaffingGapFinder.pdf",
+      testData: [
+          { name: "FI_StaffAllocation.xlsx", path: "/levels/group-04/level-2/card03/test-data/FI_StaffAllocation.xlsx" },
+          { name: "FI_ProcessRequirements.xlsx", path: "/levels/group-04/level-2/card03/test-data/FI_ProcessRequirements.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-05",
+    label: "Group 5 — Eswar",
+    cards: [
+    {
+      id: "card01",
+      name: "Loan Officer Billing Reconciler",
+      pdf: "/levels/group-05/level-2/card01/Card01_LoanOfficerBillingReconciler.pdf",
+      testData: [
+          { name: "RateCard.xlsx", path: "/levels/group-05/level-2/card01/test-data/RateCard.xlsx" },
+          { name: "FTEUtilisation.xlsx", path: "/levels/group-05/level-2/card01/test-data/FTEUtilisation.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "Process Staffing Gap Finder",
+      pdf: "/levels/group-05/level-2/card02/Card03_ProcessStaffingGapFinder.pdf",
+      testData: [
+          { name: "ProcessRequirements.xlsx", path: "/levels/group-05/level-2/card02/test-data/ProcessRequirements.xlsx" },
+          { name: "StaffAllocation.xlsx", path: "/levels/group-05/level-2/card02/test-data/StaffAllocation.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "SLA Breach Cost Classifier",
+      pdf: "/levels/group-05/level-2/card03/Card02_SLABreachCostClassifier.pdf",
+      testData: [
+          { name: "SLAReference.xlsx", path: "/levels/group-05/level-2/card03/test-data/SLAReference.xlsx" },
+          { name: "TicketLog.xlsx", path: "/levels/group-05/level-2/card03/test-data/TicketLog.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-06",
+    label: "Group 6 — Jayanthi",
+    cards: [
+    {
+      id: "card01",
+      name: "Feature Delivery SLA Penalty Classifier",
+      pdf: "/levels/group-06/level-2/card01/Card02_FeatureDeliverySLAClassifier.pdf",
+      testData: [
+          { name: "SLAReference.xlsx", path: "/levels/group-06/level-2/card01/test-data/SLAReference.xlsx" },
+          { name: "TicketLog.xlsx", path: "/levels/group-06/level-2/card01/test-data/TicketLog.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "Resource Billing Reconciler",
+      pdf: "/levels/group-06/level-2/card02/Card01_ResourceBillingReconciler.pdf",
+      testData: [
+          { name: "RateCard.xlsx", path: "/levels/group-06/level-2/card02/test-data/RateCard.xlsx" },
+          { name: "FTEUtilisation.xlsx", path: "/levels/group-06/level-2/card02/test-data/FTEUtilisation.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "Roadmap Staffing Gap Finder",
+      pdf: "/levels/group-06/level-2/card03/Card03_RoadmapStaffingGapFinder.pdf",
+      testData: [
+          { name: "ProcessRequirements.xlsx", path: "/levels/group-06/level-2/card03/test-data/ProcessRequirements.xlsx" },
+          { name: "StaffAllocation.xlsx", path: "/levels/group-06/level-2/card03/test-data/StaffAllocation.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-07",
+    label: "Group 7 — Hari",
+    cards: [
+    {
+      id: "card01",
+      name: "Telecom SLA penalty classifier",
+      pdf: "/levels/group-07/level-2/card01/Card02_TelecomSLAPenaltyClassifier.pdf",
+      testData: [
+          { name: "SLAReference.xlsx", path: "/levels/group-07/level-2/card01/test-data/SLAReference.xlsx" },
+          { name: "TicketLog.xlsx", path: "/levels/group-07/level-2/card01/test-data/TicketLog.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "Telecom site billing reconciler",
+      pdf: "/levels/group-07/level-2/card02/Card01_TelecomSiteBillingReconciler.pdf",
+      testData: [
+          { name: "RateCard.xlsx", path: "/levels/group-07/level-2/card02/test-data/RateCard.xlsx" },
+          { name: "FTEUtilisation.xlsx", path: "/levels/group-07/level-2/card02/test-data/FTEUtilisation.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "Telecom staffing gap finder",
+      pdf: "/levels/group-07/level-2/card03/Card03_TelecomStaffingGapFinder.pdf",
+      testData: [
+          { name: "ProcessRequirements.xlsx", path: "/levels/group-07/level-2/card03/test-data/ProcessRequirements.xlsx" },
+          { name: "StaffAllocation.xlsx", path: "/levels/group-07/level-2/card03/test-data/StaffAllocation.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-08",
+    label: "Group 8 — Sandhya",
+    cards: [
+    {
+      id: "card01",
+      name: "Agent Billing Reconciler",
+      pdf: "/levels/group-08/level-2/card01/Card01_AgentBillingReconciler.pdf",
+      testData: [
+          { name: "RateCard.xlsx", path: "/levels/group-08/level-2/card01/test-data/RateCard.xlsx" },
+          { name: "FTEUtilisation.xlsx", path: "/levels/group-08/level-2/card01/test-data/FTEUtilisation.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "SLA Breach Cost Classifier",
+      pdf: "/levels/group-08/level-2/card02/Card02_SLABreachCostClassifier.pdf",
+      testData: [
+          { name: "SLAReference.xlsx", path: "/levels/group-08/level-2/card02/test-data/SLAReference.xlsx" },
+          { name: "TicketLog.xlsx", path: "/levels/group-08/level-2/card02/test-data/TicketLog.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "Process Staffing Gap Finder",
+      pdf: "/levels/group-08/level-2/card03/Card03_ProcessStaffingGapFinder.pdf",
+      testData: [
+          { name: "ProcessRequirements.xlsx", path: "/levels/group-08/level-2/card03/test-data/ProcessRequirements.xlsx" },
+          { name: "StaffAllocation.xlsx", path: "/levels/group-08/level-2/card03/test-data/StaffAllocation.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-09",
+    label: "Group 9 — Sharon",
+    cards: [
+    {
+      id: "card01",
+      name: "Deal Pipeline Revenue Forecaster",
+      pdf: "/levels/group-09/level-2/card01/Card01_DealPipelineRevenueForecaster.pdf",
+      testData: [
+          { name: "DealPipeline.xlsx", path: "/levels/group-09/level-2/card01/test-data/DealPipeline.xlsx" },
+          { name: "StageConversion.xlsx", path: "/levels/group-09/level-2/card01/test-data/StageConversion.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "RFP Response Time Grader",
+      pdf: "/levels/group-09/level-2/card02/Card02_RFPResponseTimeGrader.pdf",
+      testData: [
+          { name: "RFPTracker.xlsx", path: "/levels/group-09/level-2/card02/test-data/RFPTracker.xlsx" },
+          { name: "TierSLA.xlsx", path: "/levels/group-09/level-2/card02/test-data/TierSLA.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "Partner Coverage Mapper",
+      pdf: "/levels/group-09/level-2/card03/Card03_PartnerCoverageMapper.pdf",
+      testData: [
+          { name: "DealRequirements.xlsx", path: "/levels/group-09/level-2/card03/test-data/DealRequirements.xlsx" },
+          { name: "PartnerRegistry.xlsx", path: "/levels/group-09/level-2/card03/test-data/PartnerRegistry.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-10",
+    label: "Group 10 — Arun",
+    cards: [
+    {
+      id: "card01",
+      name: "Regional Revenue Reconciler",
+      pdf: "/levels/group-10/level-2/card01/Card01_RegionalRevenueReconciler.pdf",
+      testData: [
+          { name: "ProjectDeliveryLog.xlsx", path: "/levels/group-10/level-2/card01/test-data/ProjectDeliveryLog.xlsx" },
+          { name: "RegionalRateCard.xlsx", path: "/levels/group-10/level-2/card01/test-data/RegionalRateCard.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "Milestone Breach Penalty Classifier",
+      pdf: "/levels/group-10/level-2/card02/Card02_MilestoneBreachPenaltyClassifier.pdf",
+      testData: [
+          { name: "MilestoneLog.xlsx", path: "/levels/group-10/level-2/card02/test-data/MilestoneLog.xlsx" },
+          { name: "MilestoneSLA.xlsx", path: "/levels/group-10/level-2/card02/test-data/MilestoneSLA.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "Project Staffing Gap Finder",
+      pdf: "/levels/group-10/level-2/card03/Card03_ProjectStaffingGapFinder.pdf",
+      testData: [
+          { name: "ProjectRequirements.xlsx", path: "/levels/group-10/level-2/card03/test-data/ProjectRequirements.xlsx" },
+          { name: "TeamAllocation.xlsx", path: "/levels/group-10/level-2/card03/test-data/TeamAllocation.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-11",
+    label: "Group 11 — Felina",
+    cards: [
+    {
+      id: "card01",
+      name: "Employee Compensation Reconciler",
+      pdf: "/levels/group-11/level-2/card01/Card01_EmployeeCompensationReconciler.pdf",
+      testData: [
+          { name: "EmployeePayroll.xlsx", path: "/levels/group-11/level-2/card01/test-data/EmployeePayroll.xlsx" },
+          { name: "CompensationBands.xlsx", path: "/levels/group-11/level-2/card01/test-data/CompensationBands.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "Leave Policy Breach Classifier",
+      pdf: "/levels/group-11/level-2/card02/Card02_LeavePolicyBreachClassifier.pdf",
+      testData: [
+          { name: "LeaveLog.xlsx", path: "/levels/group-11/level-2/card02/test-data/LeaveLog.xlsx" },
+          { name: "LeavePolicyReference.xlsx", path: "/levels/group-11/level-2/card02/test-data/LeavePolicyReference.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "Recruitment Gap Finder",
+      pdf: "/levels/group-11/level-2/card03/Card03_RecruitmentGapFinder.pdf",
+      testData: [
+          { name: "HiringPlan.xlsx", path: "/levels/group-11/level-2/card03/test-data/HiringPlan.xlsx" },
+          { name: "CurrentHeadcount.xlsx", path: "/levels/group-11/level-2/card03/test-data/CurrentHeadcount.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-12",
+    label: "Group 12 — Harivarshini",
+    cards: [
+    {
+      id: "card01",
+      name: "Milestone Billing Reconciler",
+      pdf: "/levels/group-12/level-2/card01/Card01_MilestoneBillingReconciler.pdf",
+      testData: [
+          { name: "MilestoneLog.xlsx", path: "/levels/group-12/level-2/card01/test-data/MilestoneLog.xlsx" },
+          { name: "RateCard.xlsx", path: "/levels/group-12/level-2/card01/test-data/RateCard.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "Compliance Audit Status Classifier",
+      pdf: "/levels/group-12/level-2/card02/Card02_ComplianceAuditStatusClassifier.pdf",
+      testData: [
+          { name: "ComplianceThresholds.xlsx", path: "/levels/group-12/level-2/card02/test-data/ComplianceThresholds.xlsx" },
+          { name: "AuditFindings.xlsx", path: "/levels/group-12/level-2/card02/test-data/AuditFindings.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "Resource SkillGap Mapper",
+      pdf: "/levels/group-12/level-2/card03/Card03_ResourceSkillGapMapper.pdf",
+      testData: [
+          { name: "TeamSkillMatrix.xlsx", path: "/levels/group-12/level-2/card03/test-data/TeamSkillMatrix.xlsx" },
+          { name: "ProjectRequirements.xlsx", path: "/levels/group-12/level-2/card03/test-data/ProjectRequirements.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-13",
+    label: "Group 13 — Stains",
+    cards: [
+    {
+      id: "card01",
+      name: "Spare Parts Valuation Reconciler",
+      pdf: "/levels/group-13/level-2/card01/Card01_SparePartsValuationReconciler.pdf",
+      testData: [
+          { name: "PhysicalCount.xlsx", path: "/levels/group-13/level-2/card01/test-data/PhysicalCount.xlsx" },
+          { name: "MaterialMaster.xlsx", path: "/levels/group-13/level-2/card01/test-data/MaterialMaster.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "Rejection Rate Penalty Classifier",
+      pdf: "/levels/group-13/level-2/card02/Card02_RejectionRatePenaltyClassifier.pdf",
+      testData: [
+          { name: "RejectionLimits.xlsx", path: "/levels/group-13/level-2/card02/test-data/RejectionLimits.xlsx" },
+          { name: "QualityLog.xlsx", path: "/levels/group-13/level-2/card02/test-data/QualityLog.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "Equipment Maintenance Compliance Checker",
+      pdf: "/levels/group-13/level-2/card03/Card03_EquipmentMaintenanceComplianceChecker.pdf",
+      testData: [
+          { name: "MaintenanceLog.xlsx", path: "/levels/group-13/level-2/card03/test-data/MaintenanceLog.xlsx" },
+          { name: "ComplianceSchedule.xlsx", path: "/levels/group-13/level-2/card03/test-data/ComplianceSchedule.xlsx" }
+      ],
+    }
+    ],
+  },  {
+    id: "group-14",
+    label: "Group 14 — Sourav",
+    cards: [
+    {
+      id: "card01",
+      name: "Project Cost Allocator",
+      pdf: "/levels/group-14/level-2/card01/Card01_ProjectCostAllocator.pdf",
+      testData: [
+          { name: "ProjectTimesheet.xlsx", path: "/levels/group-14/level-2/card01/test-data/ProjectTimesheet.xlsx" },
+          { name: "ResourceRateCard.xlsx", path: "/levels/group-14/level-2/card01/test-data/ResourceRateCard.xlsx" }
+      ],
+    },
+    {
+      id: "card02",
+      name: "Defect Severity Cost Tracker",
+      pdf: "/levels/group-14/level-2/card02/Card02_DefectSeverityCostTracker.pdf",
+      testData: [
+          { name: "SeverityReference.xlsx", path: "/levels/group-14/level-2/card02/test-data/SeverityReference.xlsx" },
+          { name: "DefectLog.xlsx", path: "/levels/group-14/level-2/card02/test-data/DefectLog.xlsx" }
+      ],
+    },
+    {
+      id: "card03",
+      name: "Resource Skill Gap Analyzer",
+      pdf: "/levels/group-14/level-2/card03/Card03_ResourceSkillGapAnalyzer.pdf",
+      testData: [
+          { name: "ProjectSkillRequirements.xlsx", path: "/levels/group-14/level-2/card03/test-data/ProjectSkillRequirements.xlsx" },
+          { name: "TeamSkillMatrix.xlsx", path: "/levels/group-14/level-2/card03/test-data/TeamSkillMatrix.xlsx" }
+      ],
+    }
+    ],
+  }
+];
+
+const Level2 = () => <LevelDetail level={2} groups={groups} />;
+
+export default Level2;
