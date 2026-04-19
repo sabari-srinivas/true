@@ -4,7 +4,7 @@ import { ArrowLeft, X, Copy, Check, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const challengeCards = [
-  { src: "/rbp-grp-01.png", number: "Challenge Card 1", name: "Are we ready to go live? Let the agents decide." },
+  { src: "/rbp-grp-01.png", number: "Challenge Card 1", name: "Go-Live Readiness Orchestrator" },
   { src: "/rbp-grp-02.png", number: "Challenge Card 2", name: "Branch Policy Copilot" },
   { src: "/rbp-grp-03.png", number: "Challenge Card 3", name: "Product Change Orchestrator" },
   { src: "/rbp-grp-04.png", number: "Challenge Card 4", name: "Rulebook Copilot" },
