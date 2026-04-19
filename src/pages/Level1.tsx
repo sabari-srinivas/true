@@ -34,7 +34,7 @@ const cards = [
     },
     {
       id: "card04",
-      name: "Project Pulse Architect",
+      name: "Project Pulse Sensor",
       tool: "Gemini Enterprise Agent Builder",
       pdf: "/levels/level-1/card04/Card_ProjectPulseArchitect.pdf",
       testData: [

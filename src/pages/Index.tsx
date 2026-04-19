@@ -10,7 +10,7 @@ const sections = [
     gradient: "from-primary to-accent",
   },
   {
-    title: "Immersion Program",
+    title: "Rapid Build Prototyping",
     description: "Rapid build immersion — challenge cards and prompts to accelerate GenAI adoption across business groups.",
     icon: Rocket,
     path: "/immersion",

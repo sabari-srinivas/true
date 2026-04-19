@@ -30,7 +30,7 @@ const Immersion = () => {
             <ArrowLeft className="h-4 w-4 mr-1" /> Back
           </Button>
           <h1 className="text-lg font-semibold font-display text-card-foreground">
-            Immersion Program
+            Rapid Build Prototyping
           </h1>
         </div>
       </header>
