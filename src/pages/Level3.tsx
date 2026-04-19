@@ -7,7 +7,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "Card Cloud Sprint Health Dashboard",
+      name: "Cloud Infrastructure Delivery Health Dashboard",
       pdf: "/levels/group-01/level-3/card01/Card_Cloud_Sprint_Health_Dashboard.pdf",
       testData: [
           { name: "CL_Sprint_Health_Dashboard_Data.xlsx", path: "/levels/group-01/level-3/card01/test-data/CL_Sprint_Health_Dashboard_Data.xlsx" }
@@ -20,7 +20,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "DM Card ProgrammeDeliveryHealthDashboard",
+      name: "Programme Delivery Health Dashboard",
       pdf: "/levels/group-02/level-3/card01/DM_Card_ProgrammeDeliveryHealthDashboard.pdf",
       testData: [
           { name: "DM_Sprint_Health_Dashboard_Data.xlsx", path: "/levels/group-02/level-3/card01/test-data/DM_Sprint_Health_Dashboard_Data.xlsx" }
@@ -33,7 +33,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "PM Card ProjectDeliveryHealthDashboard",
+      name: "Project Delivery Health Dashboard",
       pdf: "/levels/group-03/level-3/card01/PM_Card_ProjectDeliveryHealthDashboard.pdf",
       testData: [
           { name: "PM_Sprint_Health_Dashboard_Data.xlsx", path: "/levels/group-03/level-3/card01/test-data/PM_Sprint_Health_Dashboard_Data.xlsx" }
@@ -46,7 +46,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "FI Card TechDeliveryHealthDashboard",
+      name: "Technology Delivery Health Dashboard",
       pdf: "/levels/group-04/level-3/card01/FI_Card_TechDeliveryHealthDashboard.pdf",
       testData: [
           { name: "FI_Sprint_Health_Dashboard_Data.xlsx", path: "/levels/group-04/level-3/card01/test-data/FI_Sprint_Health_Dashboard_Data.xlsx" }
@@ -59,7 +59,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "Card CBGProgrammeHealthDashboard",
+      name: "Consumer Banking Programme Health Dashboard",
       pdf: "/levels/group-05/level-3/card01/Card_CBGProgrammeHealthDashboard.pdf",
       testData: [
           { name: "CBG_Sprint_Health_Dashboard_Data.xlsx", path: "/levels/group-05/level-3/card01/test-data/CBG_Sprint_Health_Dashboard_Data.xlsx" }
@@ -72,7 +72,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "Card ProgrammeDeliveryHealthDashboard",
+      name: "Programme & Process Delivery Health Dashboard",
       pdf: "/levels/group-06/level-3/card01/Card_ProgrammeDeliveryHealthDashboard.pdf",
       testData: [
           { name: "CorporateFunction_Sprint_Health_Dashboard_Data.xlsx", path: "/levels/group-06/level-3/card01/test-data/CorporateFunction_Sprint_Health_Dashboard_Data.xlsx" }
@@ -85,7 +85,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "Card Telecom Programme Delivery Health Dashboard",
+      name: "Telecom Programme Delivery Health Dashboard",
       pdf: "/levels/group-07/level-3/card01/Card_Telecom_Programme_Delivery_Health_Dashboard.pdf",
       testData: [
           { name: "TEL_Sprint_Health_Dashboard_Data.xlsx", path: "/levels/group-07/level-3/card01/test-data/TEL_Sprint_Health_Dashboard_Data.xlsx" }
@@ -98,7 +98,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "Card ProcessDeliveryHealthDashboard",
+      name: "Process Delivery Health Dashboard",
       pdf: "/levels/group-08/level-3/card01/Card_ProcessDeliveryHealthDashboard.pdf",
       testData: [
           { name: "BPO_Sprint_Health_Dashboard_Data.xlsx", path: "/levels/group-08/level-3/card01/test-data/BPO_Sprint_Health_Dashboard_Data.xlsx" }
@@ -111,7 +111,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "Card EnterpriseSalesDashboard",
+      name: "Enterprise Sales Performance Dashboard",
       pdf: "/levels/group-09/level-3/card01/Card_EnterpriseSalesDashboard.pdf",
       testData: [
           { name: "Enterprise_Sales_Dashboard_Data.xlsx", path: "/levels/group-09/level-3/card01/test-data/Enterprise_Sales_Dashboard_Data.xlsx" }
@@ -124,7 +124,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "Card ProjectDeliveryHealthDashboard",
+      name: "Project Delivery Health Dashboard",
       pdf: "/levels/group-10/level-3/card01/Card_ProjectDeliveryHealthDashboard.pdf",
       testData: [
           { name: "NGM_Sprint_Health_Dashboard_Data.xlsx", path: "/levels/group-10/level-3/card01/test-data/NGM_Sprint_Health_Dashboard_Data.xlsx" }
@@ -137,7 +137,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "Card WorkforceHealthDashboard",
+      name: "Workforce Health Dashboard",
       pdf: "/levels/group-11/level-3/card01/Card_WorkforceHealthDashboard.pdf",
       testData: [
           { name: "HR_Quarterly_Workforce_Dashboard_Data.xlsx", path: "/levels/group-11/level-3/card01/test-data/HR_Quarterly_Workforce_Dashboard_Data.xlsx" }
@@ -150,7 +150,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "Card DeliveryHealthDashboard",
+      name: "Healthcare Delivery Health Dashboard",
       pdf: "/levels/group-12/level-3/card01/Card_DeliveryHealthDashboard.pdf",
       testData: [
           { name: "HC_Delivery_Health_Dashboard_Data.xlsx", path: "/levels/group-12/level-3/card01/test-data/HC_Delivery_Health_Dashboard_Data.xlsx" }
@@ -163,7 +163,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "Card PlantEngineeringSprintHealthDashboard",
+      name: "Plant Engineering Sprint Health Dashboard",
       pdf: "/levels/group-13/level-3/card01/Card_PlantEngineeringSprintHealthDashboard.pdf",
       testData: [
           { name: "Plant_Engineering_Sprint_Health_Data.xlsx", path: "/levels/group-13/level-3/card01/test-data/Plant_Engineering_Sprint_Health_Data.xlsx" }
@@ -176,7 +176,7 @@ const groups = [
     cards: [
     {
       id: "card01",
-      name: "Card ReleasePipelineHealthDashboard",
+      name: "Release Pipeline Health Dashboard",
       pdf: "/levels/group-14/level-3/card01/Card_ReleasePipelineHealthDashboard.pdf",
       testData: [
           { name: "TechSolutions_Release_Health_Data.xlsx", path: "/levels/group-14/level-3/card01/test-data/TechSolutions_Release_Health_Data.xlsx" }
