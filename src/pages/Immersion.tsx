@@ -35,8 +35,8 @@ const Immersion = () => {
         </div>
       </header>
 
-      <div className="flex-1 flex items-center justify-center px-6 py-12">
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl w-full">
+      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 py-8 sm:py-12">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 max-w-4xl w-full">
           {sections.map((section) => (
             <button
               key={section.path}

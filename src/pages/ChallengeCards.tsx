@@ -84,7 +84,7 @@ const ChallengeCards = () => {
       </header>
 
       {/* Cards grid */}
-      <div className="flex-1 min-h-0 overflow-y-auto p-4 flex items-center justify-center">
+      <div className="flex-1 min-h-0 overflow-y-auto p-4 flex items-start lg:items-center justify-center">
         <div className="w-full max-w-[1600px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {challengeCards.map((challenge, index) => (
             <div
@@ -108,10 +108,10 @@ const ChallengeCards = () => {
                   </>
                 )}
               </Button>
-              <p className="text-xs font-bold text-foreground uppercase tracking-wide">
+              <p className="text-xs font-bold text-foreground uppercase tracking-wide pr-16">
                 {challenge.number}
               </p>
-              <p className="text-sm font-semibold text-primary font-display leading-snug mt-1.5">
+              <p className="text-sm font-semibold text-primary font-display leading-snug mt-1.5 pr-2">
                 {challenge.name}
               </p>
             </div>

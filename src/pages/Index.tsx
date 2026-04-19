@@ -22,16 +22,16 @@ const Index = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-center px-6 py-12">
+    <div className="min-h-screen bg-background flex flex-col items-center justify-center px-4 sm:px-6 py-8 sm:py-12">
       <div className="max-w-6xl w-full animate-fade-in">
-        <div className="text-center mb-12">
-          <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-3">
+        <div className="text-center mb-8 sm:mb-12">
+          <p className="text-xs sm:text-sm font-medium tracking-widest uppercase text-muted-foreground mb-3">
             iExcel Program &bull; Rapid Build Immersion
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold font-display text-foreground mb-4">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold font-display text-foreground mb-4">
             iExcel AI Coaching Toolkit
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Resources for the iExcel rapid build immersion — challenge cards and prompts to accelerate GenAI adoption across business groups.
           </p>
         </div>

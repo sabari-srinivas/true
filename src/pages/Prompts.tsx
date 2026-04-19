@@ -75,7 +75,7 @@ const Prompts = () => {
 
       {/* Main content: Image left, All prompts right */}
       <div className="flex-1 min-h-0">
-        <div className="max-w-[1600px] mx-auto h-full p-4 flex gap-5">
+        <div className="max-w-[1600px] mx-auto h-full p-4 flex flex-col lg:flex-row gap-5">
           {/* Left: Image – sticky, stretched vertically */}
           <div className="w-[45%] shrink-0 rounded-lg border border-border overflow-hidden bg-black relative hidden lg:flex flex-col">
             <div className="w-full h-full bg-black flex items-center justify-center">

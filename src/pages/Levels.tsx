@@ -43,8 +43,8 @@ const Levels = () => {
         </div>
       </header>
 
-      <div className="flex-1 flex items-center justify-center px-6 py-12">
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl w-full">
+      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 py-8 sm:py-12">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-5xl w-full">
           {levels.map((level) => (
             <button
               key={level.id}
