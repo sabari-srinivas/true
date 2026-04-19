@@ -25,7 +25,7 @@ const groups = [
     },
     {
       id: "card03",
-      name: "Case SLA Breach Cost Classifier",
+      name: "Project Resourcing Gap Finder",
       pdf: "/levels/group-01/level-2/card03/CL_Card03_ProjectResourcingGapFinder.pdf",
       testData: [
           { name: "CL_ProcessRequirements.xlsx", path: "/levels/group-01/level-2/card03/test-data/CL_ProcessRequirements.xlsx" },
