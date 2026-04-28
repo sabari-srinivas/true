@@ -126,7 +126,7 @@ const ChallengeCards = () => {
           <img
             src={selectedImg}
             alt="Challenge card"
-            className="max-w-[50vw] max-h-[80vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
+            className="max-w-[82vw] max-h-[92vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />
           <div className="absolute top-4 right-4 z-[60] flex items-center gap-2">
