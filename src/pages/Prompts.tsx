@@ -7,36 +7,99 @@ const prompts = [
   {
     step: 0,
     label: "Learn",
-    text: `Here is a Challenge card for the topic we are going to discuss today. No action required. Use this challenge card as additional context for your responses apart from web search and other resources.`,
+    text: `You are my research aide for a True Corporation AI Immersion working session.
+
+The project knowledge contains six research files: an executive research brief on True, a stakeholder map of the room, deep research on the CP/True digital ecosystem, an AI/data/platform/privacy/governance reference, a Thailand market & regulatory deep-dive, and a global AI benchmark report.
+
+Read across all of them and produce:
+1. A 6-bullet ecosystem snapshot (True Corp, True IDC, TrueMoney/Ascend, CP Axtra, AXONS/CPF, Amaze) — business model + current AI posture in one line each.
+2. The non-negotiable governance lenses for any use case (PDPA, NBTC, BOT, ETDA AI guideline, data residency).
+3. The 6 challenge candidates the research recommends for a Rapid Build session.
+4. Three "watch-outs" specific to this room (e.g. post-merger Telenor/dtac heritage, light CP ecosystem headcount, two privacy gatekeepers present).
+
+No action needed from me yet — this is context for what follows.`,
   },
   {
     step: 1,
     label: "Widen",
-    text: `Act as a research aide for [selected challenge] for [business unit]. List key personas, top pains, current workarounds, and success metrics. Return 5 insights & 3 risks tailored to this challenge context.`,
+    text: `Act as a research aide for the [selected challenge] in the True / CP ecosystem context.
+
+Using the project knowledge:
+- List the key personas involved, drawn from realistic True/CP roles (e.g. Mari AI ops lead, NOC engineer, TrueMoney fraud analyst, CP Axtra category manager, AXONS field agronomist) — not generic archetypes.
+- Top 5 pains, with each tagged to which entity feels it most (True / True IDC / TrueMoney / CP Axtra / AXONS / Amaze / cross-ecosystem).
+- Current workarounds in use today (cite from the research where you can).
+- Success metrics already used by True or peers — including Mari AI's published benchmarks (22M transactions / 92% digital resolution) where the challenge is care-adjacent.
+- 5 insights tailored to this challenge, each grounded in a specific Thailand or True/CP signal.
+- 3 risks framed against PDPA, NBTC, BOT, or post-merger integration — not generic AI risks.
+
+Flag any ecosystem-reuse angle (i.e. could the same pattern travel to another CP/True business?).`,
   },
   {
     step: 2,
     label: "Diagnose",
-    text: `Let's pick the top [#] pains for this challenge. For these listed top pains, run a Five Whys. Propose 3 root-cause hypotheses and the disproof evidence for each. Specify the minimum data cut & owners to pull. Output a root-cause map, test plan, and privacy constraints.`,
+    text: `Pick the [top pain-point] for this challenge. For this pain, run a Five Whys grounded in True/CP operating reality (e.g. legacy True+dtac stacks, NBTC consent rules for telco data beyond core service, federated data across ecosystem entities).
+
+Propose 3 root-cause hypotheses. For each, specify:
+- Disproof evidence required.
+- The minimum data cut needed AND the lawful basis under PDPA (consent / legitimate interest / contract performance) — flag if NBTC or BOT also applies.
+- The owner who would need to pull the data, named to a function (e.g. AI First programme office, True IDC platform team, TrueMoney risk, CP Axtra merchandising, Privacy/DPO team).
+
+Output:
+- A root-cause map.
+- A test plan with quick-win experiments (≤2 weeks).
+- A privacy & governance constraint sheet covering: purpose limitation, data minimization, retention, human-in-the-loop checkpoints, and whether a DPIA is triggered.`,
   },
   {
     step: 3,
     label: "Ideate",
-    text: `Generate and Cluster possible AI driven ideas into 3 Options:
-1. Process (policy, ways of working),
-2. Analytics/ML (forecast, optimise, recommend),
-3. Automation (CV, Retrieval-Augmented Generation/Co-Pilot, tasking).
-Score each on Impact × Feasibility × Confidence × Time-to-Value. Recommend one pilot with the smallest integration surface and clearest value proof to [business unit].`,
+    text: `Generate and cluster possible AI-driven ideas for this challenge into 3 Options:
+1. Process / policy / ways-of-working
+2. Analytics / ML (forecast, optimise, recommend)
+3. AI & Automation (RAG, computer vision, agentic AI)
+
+Score each option on:
+- Impact (business value at True / CP scale)
+- Feasibility (data readiness + PDPA/NBTC/BOT path)
+- Confidence (evidence base from analogue benchmarks — cite Vodafone, Telenor, Singtel, Ant, Grab, Walmart etc. where the research supports it)
+- Time-to-value
+- Ecosystem reusability (can the pattern transfer across True / True IDC / TrueMoney / CP Axtra / AXONS / Amaze?)
+
+Recommend ONE pilot with the smallest cross-system integration surface inside the True/CP stack, the clearest value proof, and a credible sponsor named to a stakeholder cluster (executive, AI First, data platform, privacy, business unit, ecosystem, partner).`,
   },
   {
     step: 4,
     label: "Brief",
-    text: `For option [#], create a one-page pilot brief including: Target user(s), problem statement, success metrics & baselines, target uplift, key flow (5–7 steps), screens/components, sample UI copy, representative sample data, integration points, and relevant guardrails (GDPR/PCI, domain specific regulation boundaries, bias tests, fallback behaviour).`,
+    text: `For the recommended pilot, create a one-page pilot brief including:
+
+- Target user(s) named to a True/CP role
+- Problem statement
+- Success metrics & baselines (use Mari AI / True published numbers where relevant; state assumptions clearly otherwise)
+- Target uplift over baseline
+- Key flow (5–7 steps)
+- Screens / components
+- Sample UI copy in BOTH Thai and English where customer-facing
+- Representative sample data — synthetic, Thai-context names and values, no real PII
+- Integration points across True/CP systems (e.g. Mari AI, BSS/billing, TrueMoney KYC, CP Axtra POS, True IDC hosting)
+- Guardrails: PDPA lawful basis & consent flow, NBTC service-user privacy, BOT outsourcing & fraud rules where applicable, ETDA AI guideline alignment, data residency (Thai sovereignty), bias tests, human-in-the-loop checkpoints, fallback behaviour, DPIA status
+- Decision rights: who can approve scaling, who must be consulted (Privacy/DPO, AI First, business sponsor)`,
   },
   {
     step: 5,
     label: "Build",
-    text: `You are a product design expert. Using only the brief above, write a single [platform] product requirements prompt that includes: Product name + one liner description (actions, process, capabilities), who it's for, screens + key components, brand colors, main user flow, sample data, concise headlines/CTAs, UI instructions, success metric card, constraints (no PII). Return the [platform] prompt only.`,
+    text: `You are a product design expert. Using only the brief above, write a single [platform] product requirements prompt that includes:
+
+- Product name + one-liner (actions, process, capabilities)
+- Who it's for (named True/CP role)
+- Screens + key components
+- Brand colours: True Corp red/orange family for True-anchored use cases; neutral CP palette for ecosystem-anchored ones (state which you chose and why)
+- Main user flow
+- Sample data: synthetic, Thai-named, Thai Baht where currency applies, plausible Bangkok/regional locations, NO real PII or real customer identifiers
+- Concise headlines & CTAs in both Thai and English where the screen is customer-facing; English-only acceptable for back-office screens
+- UI instructions
+- Success metric card showing baseline vs target uplift
+- Constraints panel listing PDPA / NBTC / BOT / data-residency rules the prototype must visibly respect (e.g. consent banner, audit log entry, human-approval gate)
+
+Return the [platform] prompt only.`,
   },
 ];
 

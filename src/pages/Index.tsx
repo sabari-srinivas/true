@@ -1,19 +1,19 @@
 import { useNavigate } from "react-router-dom";
-import { Layers, Rocket, ArrowRight } from "lucide-react";
+import { Images, MessageSquare, ArrowRight } from "lucide-react";
 
 const sections = [
   {
-    title: "Level 1, Level 2, Level 3",
-    description: "Structured learning levels to progressively build GenAI capabilities across business groups.",
-    icon: Layers,
-    path: "/levels",
+    title: "Challenge Cards",
+    description: "12 True / CP challenge cards across telecom, fintech, retail, and enterprise — framing the problem and where GenAI changes the economics.",
+    icon: Images,
+    path: "/challenge-cards",
     gradient: "from-primary to-accent",
   },
   {
-    title: "Rapid Build Prototyping",
-    description: "Rapid build immersion — challenge cards and prompts to accelerate GenAI adoption across business groups.",
-    icon: Rocket,
-    path: "/immersion",
+    title: "Prompts",
+    description: "Double Diamond framework prompts for the True Corp AI immersion session. Copy and use with your favourite AI tool.",
+    icon: MessageSquare,
+    path: "/prompts",
     gradient: "from-accent to-primary",
   },
 ];
@@ -26,13 +26,13 @@ const Index = () => {
       <div className="max-w-6xl w-full animate-fade-in">
         <div className="text-center mb-8 sm:mb-12">
           <p className="text-xs sm:text-sm font-medium tracking-widest uppercase text-muted-foreground mb-3">
-            iExcel Program &bull; Rapid Build Immersion
+            True Corp Program &bull; Rapid Build Immersion
           </p>
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold font-display text-foreground mb-4">
-            iExcel AI Coaching Toolkit
+            True Corp AI Coaching Toolkit
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-            Resources for the iExcel rapid build immersion — challenge cards and prompts to accelerate GenAI adoption across business groups.
+            Challenge cards and a step-by-step prompt framework for the True / CP AI Immersion — from problem context to a working prototype.
           </p>
         </div>
 

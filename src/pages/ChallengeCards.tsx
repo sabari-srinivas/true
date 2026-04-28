@@ -4,20 +4,18 @@ import { ArrowLeft, X, Copy, Check, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const challengeCards = [
-  { src: "/rbp-grp-01.png", number: "Challenge Card 1", name: "Go-Live Readiness Orchestrator" },
-  { src: "/rbp-grp-02.png", number: "Challenge Card 2", name: "Branch Policy Copilot" },
-  { src: "/rbp-grp-03.png", number: "Challenge Card 3", name: "Product Change Orchestrator" },
-  { src: "/rbp-grp-04.png", number: "Challenge Card 4", name: "Rulebook Copilot" },
-  { src: "/rbp-grp-05.png", number: "Challenge Card 5", name: "SKU Copilot" },
-  { src: "/rbp-grp-06.png", number: "Challenge Card 6", name: "Vendor Assistant" },
-  { src: "/rbp-grp-07.png", number: "Challenge Card 7", name: "Network Rollout Copilot" },
-  { src: "/rbp-grp-08.png", number: "Challenge Card 8", name: "Exception-Handling Copilot" },
-  { src: "/rbp-grp-09.png", number: "Challenge Card 9", name: "Bid Manager Assistant" },
-  { src: "/rbp-grp-10.png", number: "Challenge Card 10", name: "Portfolio Delivery Copilot" },
-  { src: "/rbp-grp-11.png", number: "Challenge Card 11", name: "Attrition Copilot" },
-  { src: "/rbp-grp-12.png", number: "Challenge Card 12", name: "Clinical Trial Copilot" },
-  { src: "/rbp-grp-13.png", number: "Challenge Card 13", name: "Shop Floor Copilot" },
-  { src: "/rbp-grp-14.png", number: "Challenge Card 14", name: "Legacy Modernisation Copilot" },
+  { src: "/truecorp/tc-card-02.png", number: "Challenge Card 1", name: "ThinScore: Bureau-Free Virtual Bank Credit" },
+  { src: "/truecorp/tc-card-03.png", number: "Challenge Card 2", name: "Farm-to-Fork-to-Finance — CPF Agritech Credit" },
+  { src: "/truecorp/tc-card-04.png", number: "Challenge Card 3", name: "Real-Time Thai-English Voice Translator" },
+  { src: "/truecorp/tc-card-05.png", number: "Challenge Card 4", name: "Automated Household Conversion" },
+  { src: "/truecorp/tc-card-06.png", number: "Challenge Card 5", name: "Scam to Closure: Agentic Victim Resolution" },
+  { src: "/truecorp/tc-card-07.png", number: "Challenge Card 6", name: "AI Procurement Intelligence" },
+  { src: "/truecorp/tc-card-08.png", number: "Challenge Card 7", name: "Post-Merger Customer Experience" },
+  { src: "/truecorp/tc-card-09.png", number: "Challenge Card 8", name: "Network Assurance & 3Zero Operations" },
+  { src: "/truecorp/tc-card-10.png", number: "Challenge Card 9", name: "Cross-Entity Fraud Intelligence" },
+  { src: "/truecorp/tc-card-11.png", number: "Challenge Card 10", name: "Retail Demand Sensing & Waste Reduction" },
+  { src: "/truecorp/tc-card-12.png", number: "Challenge Card 11", name: "B2B Enterprise Solution Sales Copilot" },
+  { src: "/truecorp/tc-card-13.png", number: "Challenge Card 12", name: "Workforce AI Productivity Measurement" },
 ];
 
 const ChallengeCards = () => {
@@ -78,7 +76,7 @@ const ChallengeCards = () => {
             <ArrowLeft className="h-4 w-4 mr-1" /> Back
           </Button>
           <h1 className="text-lg font-semibold font-display text-card-foreground">
-            iExcel Challenge Cards
+            True Corp Challenge Cards
           </h1>
         </div>
       </header>
