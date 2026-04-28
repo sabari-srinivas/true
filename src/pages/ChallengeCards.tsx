@@ -120,13 +120,13 @@ const ChallengeCards = () => {
       {/* Image overlay */}
       {selectedImg && (
         <div
-          className="fixed inset-0 z-50 bg-black flex items-center justify-center"
+          className="fixed inset-0 z-50 bg-black/85 flex items-center justify-center p-4"
           onClick={() => setSelectedImg(null)}
         >
           <img
             src={selectedImg}
             alt="Challenge card"
-            className="max-w-[90vw] max-h-[90vh] object-contain"
+            className="max-w-[50vw] max-h-[80vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />
           <div className="absolute top-4 right-4 z-[60] flex items-center gap-2">
