@@ -9,12 +9,12 @@ const prompts = [
     label: "Learn",
     text: `You are my research aide for a True Corporation AI Immersion working session.
 
-The project knowledge contains six research files: an executive research brief on True, a stakeholder map of the room, deep research on the CP/True digital ecosystem, an AI/data/platform/privacy/governance reference, a Thailand market & regulatory deep-dive, and a global AI benchmark report.
+The project knowledge contains Deep research report on executive research brief on True, a stakeholder map of the room, deep research on the CP/True digital ecosystem, an AI/data/platform/privacy/governance reference, a Thailand market & regulatory deep-dive, and a global AI benchmark report.
 
 Read across all of them and produce:
 1. A 6-bullet ecosystem snapshot (True Corp, True IDC, TrueMoney/Ascend, CP Axtra, AXONS/CPF, Amaze) — business model + current AI posture in one line each.
 2. The non-negotiable governance lenses for any use case (PDPA, NBTC, BOT, ETDA AI guideline, data residency).
-3. The 6 challenge candidates the research recommends for a Rapid Build session.
+3. The 12 challenge candidates the research recommends for a Rapid Build session.
 4. Three "watch-outs" specific to this room (e.g. post-merger Telenor/dtac heritage, light CP ecosystem headcount, two privacy gatekeepers present).
 
 No action needed from me yet — this is context for what follows.`,

@@ -13,8 +13,8 @@ const DeepResearch = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/documents/CBIC _ NCTC Stakeholder Visit Research Brief.pdf";
-    link.download = "CBIC_NCTC_Stakeholder_Visit_Research_Brief.pdf";
+    link.href = "/documents/True_CP_AI_Immersion_Deep_Research_Report.pdf";
+    link.download = "True_CP_AI_Immersion_Deep_Research_Report.pdf";
     link.click();
   };
 
@@ -27,7 +27,7 @@ const DeepResearch = () => {
             <Button variant="ghost" size="sm" onClick={() => navigate("/")}>
               <ArrowLeft className="h-4 w-4 mr-1" /> Back
             </Button>
-            <h1 className="text-lg font-semibold font-display text-card-foreground">Deep Research Reports</h1>
+            <h1 className="text-lg font-semibold font-display text-card-foreground">Deep Research Report</h1>
           </div>
           <div className="flex items-center gap-2 flex-wrap">
             <Button variant="outline" size="sm" onClick={handleDownload}>
@@ -48,9 +48,9 @@ const DeepResearch = () => {
       <div className="flex-1 p-4">
         <div className="max-w-5xl mx-auto h-[calc(100vh-100px)] bg-card rounded-xl border border-border shadow-sm overflow-hidden">
           <iframe
-            src="/documents/CBIC _ NCTC Stakeholder Visit Research Brief.pdf"
+            src="/documents/True_CP_AI_Immersion_Deep_Research_Report.pdf"
             className="w-full h-full"
-            title="CBIC / NCTC Stakeholder Visit Research Brief"
+            title="True / CP AI Immersion Deep Research Report"
           />
         </div>
       </div>

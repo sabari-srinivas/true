@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { Images, MessageSquare, ArrowRight } from "lucide-react";
+import { Images, MessageSquare, FileText, ArrowRight } from "lucide-react";
 
 const sections = [
   {
@@ -10,11 +10,18 @@ const sections = [
     gradient: "from-primary to-accent",
   },
   {
+    title: "Deep Research Report",
+    description: "True / CP AI Immersion deep research report — view in-app or download for offline reference.",
+    icon: FileText,
+    path: "/deep-research",
+    gradient: "from-accent to-primary",
+  },
+  {
     title: "Prompts",
     description: "Double Diamond framework prompts for the True Corp AI immersion session. Copy and use with your favourite AI tool.",
     icon: MessageSquare,
     path: "/prompts",
-    gradient: "from-accent to-primary",
+    gradient: "from-primary to-accent",
   },
 ];
 
@@ -36,7 +43,7 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {sections.map((section) => (
             <button
               key={section.path}
