@@ -4,18 +4,18 @@ import { ArrowLeft, X, Copy, Check, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const challengeCards = [
-  { src: "/truecorp/tc-card-02.png", number: "Challenge Card 1", name: "ThinScore: Bureau-Free Virtual Bank Credit" },
+  { src: "/truecorp/tc-card-02.png", number: "Challenge Card 1", name: "ThinScore: Bureau-Free Credit for Thailand's Invisible Millions" },
   { src: "/truecorp/tc-card-03.png", number: "Challenge Card 2", name: "Farm-to-Fork-to-Finance — CPF Agritech Credit" },
   { src: "/truecorp/tc-card-04.png", number: "Challenge Card 3", name: "Real-Time Thai-English Voice Translator" },
   { src: "/truecorp/tc-card-05.png", number: "Challenge Card 4", name: "Automated Household Conversion" },
   { src: "/truecorp/tc-card-06.png", number: "Challenge Card 5", name: "Scam to Closure: Agentic Victim Resolution" },
   { src: "/truecorp/tc-card-07.png", number: "Challenge Card 6", name: "AI Procurement Intelligence" },
-  { src: "/truecorp/tc-card-08.png", number: "Challenge Card 7", name: "Post-Merger Customer Experience" },
-  { src: "/truecorp/tc-card-09.png", number: "Challenge Card 8", name: "Network Assurance & 3Zero Operations" },
-  { src: "/truecorp/tc-card-10.png", number: "Challenge Card 9", name: "Cross-Entity Fraud Intelligence" },
-  { src: "/truecorp/tc-card-11.png", number: "Challenge Card 10", name: "Retail Demand Sensing & Waste Reduction" },
-  { src: "/truecorp/tc-card-12.png", number: "Challenge Card 11", name: "B2B Enterprise Solution Sales Copilot" },
-  { src: "/truecorp/tc-card-13.png", number: "Challenge Card 12", name: "Workforce AI Productivity Measurement" },
+  { src: "/truecorp/tc-card-08.png", number: "Challenge Card 7", name: "Post-Merger Customer Experience Still Feels Like Two Companies" },
+  { src: "/truecorp/tc-card-09.png", number: "Challenge Card 8", name: "Network Incidents Take Too Long to Detect, Diagnose and Resolve" },
+  { src: "/truecorp/tc-card-10.png", number: "Challenge Card 9", name: "Fraud and Scam Losses Outpace Control Updates" },
+  { src: "/truecorp/tc-card-11.png", number: "Challenge Card 10", name: "Retail Demand and Waste Decisions Happen in Fragmented Loops" },
+  { src: "/truecorp/tc-card-12.png", number: "Challenge Card 11", name: "Enterprise Sales Cycles Stall Translating Customer Pain into Solutions" },
+  { src: "/truecorp/tc-card-13.png", number: "Challenge Card 12", name: "Workforce AI Training Is Happening but Cycle-Time Gains Are Unmeasured" },
 ];
 
 const ChallengeCards = () => {
